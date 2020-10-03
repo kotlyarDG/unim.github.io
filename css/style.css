@@ -730,7 +730,7 @@ svg rect {
 }
 
 .input-name:before {
-  content: url("../../images/system_img/name.svg");
+  content: url("../images/system_img/name.svg");
   position: absolute;
   top: 9px;
   left: 18px;
@@ -759,7 +759,7 @@ svg rect {
 }
 
 .input-email:before {
-  content: url("../../images/system_img/email-input.svg");
+  content: url("../images/system_img/email-input.svg");
   position: absolute;
   top: 12px;
   left: 20px;
@@ -788,7 +788,7 @@ svg rect {
 }
 
 .input-textarea:before {
-  content: url("../../images/system_img/pencil.svg");
+  content: url("../images/system_img/pencil.svg");
   position: absolute;
   top: 9px;
   left: 20px;
