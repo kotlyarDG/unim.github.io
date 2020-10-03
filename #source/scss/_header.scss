@@ -1,3 +1,143 @@
-.header{
-	
+.header {
+	background-color: #fff;
+	height: 154px;
+	position: relative;
+	width: 100%;
+	padding: 60px 0 0 0;
+
+	@media (max-width: $xs) {
+		height: 75px;
+		padding: 0 0 0 0;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		opacity: 0.2;
+		background-color: #217cc1;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	&--contact {
+		@media (max-width: $xs) {
+			background: linear-gradient(102.97deg, #55abff 4.66%, #1e79bd 93.91%);
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__logo {
+		img {
+			max-width: 100%;
+		}
+
+		&.header__logo--contact-view {
+			display: none;
+			width: 93px;
+			height: 38px;
+			max-width: 100%;
+		}
+
+		@media (max-width: $xs) {
+			&.header__logo--contact {
+				display: none;
+			}
+			&.header__logo--contact-view {
+				display: block;
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+	}
+
+	&__menu-link {
+		display: inline-block;
+		font-size: 15px;
+		line-height: 18px;
+		color: #073456;
+		border-radius: 10px;
+		padding: 12px 34px;
+		transition: 0.3s;
+
+		&:hover {
+			transform: translateY(-3px);
+		}
+
+		&:first-child {
+			margin: 0 10px 0 0;
+		}
+
+		&._active {
+			color: #ffffff;
+			background: linear-gradient(98.47deg, #55abff 9.38%, #1e79bd 93.7%);
+
+			@media (max-width: $sm) {
+				display: none;
+			}
+		}
+
+		@media (max-width: $sm) {
+			color: #ffffff;
+			background: linear-gradient(98.47deg, #55abff 9.38%, #1e79bd 93.7%);
+			margin: 0 10px 0 0;
+		}
+
+		&--contact {
+			@media (max-width: $xs) {
+				color: #073456;
+				background: #ffffff;
+				box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+
+	&__contact {
+		display: flex;
+		flex-direction: column;
+
+		margin: 0 45px 0 80px;
+
+		@media (max-width: $md) {
+			display: none;
+		}
+	}
+
+	&__contact-link {
+		font-size: 15px;
+		line-height: 20px;
+
+		color: #073456;
+	}
+
+	&__btn {
+		transition: 0.4s;
+		color: #3a93e0;
+
+		&:hover {
+			color: #fff;
+			background: linear-gradient(92.87deg, #55abff 7.22%, #1f79bd 95%);
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-color: #fff;
+		}
+
+		@media (max-width: $xs) {
+			display: none;
+		}
+	}
 }

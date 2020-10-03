@@ -1,1 +1,35 @@
 // Файл для описания стилей для общих блоков
+.container {
+	max-width: 1390px;
+	margin: 0 auto;
+
+	@media (max-width: 1400px) {
+		max-width: 1180px;
+	}
+	@media (max-width: $md) {
+		max-width: 970px;
+	}
+
+	@media (max-width: $sm) {
+		max-width: 750px;
+	}
+
+	@media (max-width: $xs) {
+		width: 100%;
+		padding: 0 35px;
+	}
+
+	@media (max-width: 400px) {
+		padding: 0 10px;
+	}
+}
+.btn {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	padding: 15px 60px;
+	border-radius: 10px;
+
+	border: 3px solid #55abff;
+}

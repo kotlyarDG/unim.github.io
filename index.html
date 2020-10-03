@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 
 <html lang="ru">
-	<head>
-		<!-- Tittle -->
-		<title>Tittle</title>
 
-		<!-- Кодировка -->
-		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<head>
+	<!-- Tittle -->
+	<title>Tittle</title>
 
-		<!-- Настройки вьюпорта для адекватного адаптива -->
-		<meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- Кодировка -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
-		<!-- Подключение CSS файлов -->
-		<link rel="stylesheet"	href="css/style.css" />
-		
-	</head>
-	<body>
-		<!-- Внешняя оболочка -->
-		<div class="wrapper">
-			
-		</div>
-		
+	<!-- Настройки вьюпорта для адекватного адаптива -->
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-		<!-- Подключение JS файлов -->
-		<!-- Jquery -->
-		<script src="js/jquery-3.5.0.min.js"></script>
+	<!-- Подключение CSS файлов -->
+	<link rel="stylesheet" href="css/style.css" />
 
-		<!-- Main script file -->
-		<script src="js/script.js"></script>
-	</body>
+</head>
+
+<body>
+	<!-- Внешняя оболочка -->
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="container header__wrapper">
+				<div class="header__logo">
+					<img src="images/system_img/logo.png" alt="logo">
+				</div>
+				<div class="header__content">
+					<nav class="header__menu">
+						<a href="#" class="header__menu-link _active">Главная</a>
+						<a href="#" class="header__menu-link">Контакты</a>
+					</nav>
+					<div class="header__contact">
+						<a href="tell:84953749207" class="header__contact-link">Москва: +8 (495) 374-92-07</a>
+						<a href="tell:79600616570" class="header__contact-link">Казань: +7 960 061-65-70</a>
+					</div>
+					<a href="#" class="header__btn btn">Заказать звонок</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="main">
+			<div class="main__wrapper container">
+				<div class="main__column">
+					<div class="main__content">
+						<h1 class="main__title">37% диагнозов не подтверждаются</h1>
+						<ul class="main__list">
+							<li class="main__item">Согласно внутренней статистике компании UNIM, каждый третий входящий
+								диагноз, поставленный в повседневной онкологической диагностике, оказывается неверным. </li>
+							<li class="main__item">Только коллегиальная постановка диагноза специалистами локального профиля
+								может гарантировать верный диагноз.</li>
+							<li class="main__item">Не упускайте шанс, перепроверьте свой диагноз. Есть возможность получить
+								услуги бесплатно в рамках ОМС.</li>
+						</ul>
+						<a href="#" class="main__btn btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="main__column _bg"></div>
+			</div>
+			<div class="main__footer">
+				<div class="main__footer-img"><img src="images/system_img/footer-img.svg" alt=""></div>
+				<p><span>За подробной информацией:</span>
+					unim.su</p>
+			</div>
+		</section>
+
+	</div>
+
+
+	<!-- Подключение JS файлов -->
+	<!-- Jquery -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+
+	<!-- Main script file -->
+	<script src="js/script.js"></script>
+</body>
 
 </html>
