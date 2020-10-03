@@ -7,7 +7,13 @@
 
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		flex: 1 1 auto;
+	}
+
+	&__flex {
+		display: flex;
 
 		@media (max-width: $xs) {
 			flex-direction: column;
